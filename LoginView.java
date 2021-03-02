@@ -133,11 +133,6 @@ public class LoginView extends JFrame implements ActionListener, ItemListener
         }
     }
 
-    public static void main(String[] args)
-    {
-        new LoginView();
-    }
-
     @Override
     public void itemStateChanged(ItemEvent e)
     {
@@ -150,5 +145,10 @@ public class LoginView extends JFrame implements ActionListener, ItemListener
                 break;
         }
 
+    }
+
+    public static void main(String[] args)
+    {
+        new LoginView();
     }
 }
