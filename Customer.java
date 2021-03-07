@@ -8,6 +8,7 @@ public class Customer
     private String address;
     private String email;
     private String phone;
+    private String password;
     private double billAmount;
 
     public Customer()
@@ -18,10 +19,11 @@ public class Customer
         this.lName ="";
         this.address ="";
         this.phone ="";
+        this.password ="";
         this.billAmount =0.0;
     }
 
-    public Customer(int customerId, String fName, String lName, String address, String email, String phone, double billAmount)
+    public Customer(int customerId, String fName, String lName, String address, String email, String phone, String password, double billAmount)
     {
         this.customerId = customerId;
         this.fName = fName;
@@ -29,6 +31,7 @@ public class Customer
         this.address = address;
         this.email=email;
         this.phone = phone;
+        this.password = password;
         this.billAmount = billAmount;
     }
     public Customer(Customer c)
@@ -39,9 +42,9 @@ public class Customer
         this.address = c.address;
         this.email= c.email;
         this.phone = c.phone;
+        this.password = c.password;
         this.billAmount = c.billAmount;
     }
-
 
     public int getCustomerId() {
         return customerId;
@@ -66,6 +69,10 @@ public class Customer
         return phone;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     public double getBillAmount() {
         return billAmount;
     }
@@ -85,18 +92,21 @@ public class Customer
     public void setAddress(String address) {
         this.address = address;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
-
 
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public void setBillAmount(double billAmount) {
         this.billAmount = billAmount;
     }
-
 
 }
