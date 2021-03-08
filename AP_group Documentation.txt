@@ -1,0 +1,6 @@
+Group Documentation
+
+Design -Nsia Mckenzie,Adrian Bennett and Aldayne Henry 
+Normalization- Nsia Mckenzie and Adrian Bennett
+Implementation -Adrian Bennett,Nsia Mckenzie and Aldayne Henry 
+Data Dictionary- Aldayne Henry 
