@@ -1,12 +1,15 @@
 package Users;
 
-public class Technicians {
+public class Technicians
+{
     private int techId;
     private String fName;
     private String lName;
     private String address;
     private String phone;
     private String email;
+    private String password;
+    private int hoursWorked;
 
 
     public Technicians() {
@@ -16,15 +19,19 @@ public class Technicians {
         this.address = "";
         this.phone = "";
         this.email = "";
+        this.password = "";
+        this.hoursWorked = 0;
     }
 
-    public Technicians(int techId, String fName, String lName, String address, String phone, String email) {
+    public Technicians(int techId, String fName, String lName, String address, String phone, String email, String password, int hoursWorked) {
         this.techId = techId;
         this.fName = fName;
         this.lName = lName;
         this.address = address;
         this.phone = phone;
         this.email = email;
+        this.password = password;
+        this.hoursWorked = hoursWorked;
     }
     public Technicians(Technicians t) {
         this.techId = t.techId;
@@ -33,6 +40,8 @@ public class Technicians {
         this.address = t.address;
         this.phone = t.phone;
         this.email = t.email;
+        this.password = t.password;
+        this.hoursWorked = t.hoursWorked;
     }
 
     public int getTechId() {
@@ -59,6 +68,14 @@ public class Technicians {
         return email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public int getHoursWorked() {
+        return hoursWorked;
+    }
+
     public void setTechId(int techId) {
         this.techId = techId;
     }
@@ -81,5 +98,13 @@ public class Technicians {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setHoursWorked(int hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
 }

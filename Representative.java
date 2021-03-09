@@ -8,7 +8,8 @@ public class Representative
     private String address;
     private String phone;
     private String email;
-
+    private String password;
+    private double salary;
 
     public Representative()
     {
@@ -18,16 +19,18 @@ public class Representative
         this.address ="";
         this.phone = "";
         this.email = "";
-
+        this.password = "";
+        this.salary = 0;
     }
-    public Representative(int employeeID, String fName, String lName, String address, String phone, String email) {
+    public Representative(int employeeID, String fName, String lName, String address, String phone, String email, String password, double salary) {
         this.employeeID = employeeID;
         this.fName = fName;
         this.lName = lName;
         this.address = address;
         this.phone = phone;
         this.email = email;
-
+        this.password = password;
+        this.salary = salary;
     }
     public Representative(Representative r) {
         this.employeeID = r.employeeID;
@@ -36,7 +39,16 @@ public class Representative
         this.address = r.address;
         this.phone = r.phone;
         this.email = r.email;
+        this.password = r.password;
+        this.salary = r.salary;
+    }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public double getSalary() {
+        return salary;
     }
 
     public int getEmployeeID() {
@@ -88,5 +100,11 @@ public class Representative
         this.email = email;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 }
